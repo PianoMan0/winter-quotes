@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>
+			Winter Quotes
+		</title>
+		<style>
+			  body {
+            background-color: #1e1e1e; 
+            color: #ffffff; 
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; 
+        }
+
+        .snowfall {
+            position: relative;
+            font-size: 3rem;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out, snow 5s linear infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes snow {
+            0% {
+                text-shadow: 0 0 0 rgba(255, 255, 255, 0),
+                             0 0 0 rgba(255, 255, 255, 0);
+            }
+            50% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                             0 0 20px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                text-shadow: 0 0 0 rgba(255, 255, 255, 0),
+                             0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+
+        /* Snowflakes */
+        @keyframes snowfall {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+
+        .snowflake {
+            position: absolute;
+            top: 0;
+            color: #ffffff;
+            opacity: 0.8;
+            font-size: 1rem;
+            pointer-events: none;
+            animation: snowfall linear infinite;
+        }
+
+        /* Create multiple snowflakes */
+        .snowflake:nth-child(1) { left: 10%; animation-duration: 5s; }
+        .snowflake:nth-child(2) { left: 20%; animation-duration: 6s; }
+        .snowflake:nth-child(3) { left: 30%; animation-duration: 4s; }
+        .snowflake:nth-child(4) { left: 40%; animation-duration: 7s; }
+        .snowflake:nth-child(5) { left: 50%; animation-duration: 5.5s; }
+        .snowflake:nth-child(6) { left: 60%; animation-duration: 6.5s; }
+        .snowflake:nth-child(7) { left: 70%; animation-duration: 4.5s; }
+        .snowflake:nth-child(8) { left: 80%; animation-duration: 5.2s; }
+        .snowflake:nth-child(9) { left: 90%; animation-duration: 6.2s; }
+			
+
+			
+			
+		</style>
+	</head>
+	<main><center><br>
+	<div class="snowfall">"Winter is not a season, it's a celebration." — Anamika Mishra<br><br><br><br></div>
+		<div class="snowfall">"The cold never bothered me anyway." — Idina Menzel</div><br><br><br><br>
+		<div class="snowfall">"To appreciate the beauty of a snowflake, it is necessary to stand out in the cold." — Aristotle</div><br><br><br><br>
+		<div class="snowfall">"Thanks for this opportunity, Hackclub!" — PianoMan0
+		  <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+	
